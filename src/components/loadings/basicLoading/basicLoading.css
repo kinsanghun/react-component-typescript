@@ -1,0 +1,35 @@
+.basic-loading {
+    position: relative;
+    width : 150px;
+    height : 150px;
+    background: rgb(251, 185, 3);
+    border-radius: 50%;
+    animation: basic-loading 1s linear infinite;
+}
+.basic-loading::before {
+    content: '';
+    position: absolute;
+    top : 5%;
+    left : 5%;
+    width : 90%;
+    height : 90%;
+    border-radius: 50%;
+    background: white;
+}
+.basic-loading::after {
+    content : '';
+    position: absolute;
+    left : 0;
+    top : 0;
+    width : 100%;
+    height : 50%;
+    background: white;
+}
+@keyframes basic-loading {
+    0%{
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

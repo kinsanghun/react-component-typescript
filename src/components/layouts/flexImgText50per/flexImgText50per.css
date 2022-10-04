@@ -1,0 +1,39 @@
+.flexImgText50per {
+    position : relative;
+    width : 100%;
+    height : 400px;
+    display: flex;
+    justify-content: space-between;
+}
+.flexImgText50per > img {
+    width : 50%;
+    height : 100%;
+    box-shadow : 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.flexImgText50per > .text{
+    position : relative;
+    height : 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin : 0 auto;
+}
+.flexImgText50per > .text > h2 {
+    width : 100%;
+    margin : 0;
+    font-weight: 500;
+}
+.flexImgText50per > .text > p {
+    max-width: 600px;
+    margin-bottom : 1.5rem;
+    font-weight: 100;
+}
+.flexImgText50per > .text > button {
+    width : 100px;
+    height : 30px;
+    border : 0.5px solid gray;
+    color : gray;
+    background: transparent;
+
+}

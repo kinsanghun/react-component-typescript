@@ -1,0 +1,14 @@
+:root {
+    --h1-font-size : 28px;
+    --h2-font-size : 22px;
+    --h3-font-size : 18px;
+    --normal-font-size : 16px;
+    --primary-color : #FFD674;
+    --menu-width : 250px;
+}
+a {
+    text-decoration: none;
+}
+.App {
+    overflow: hidden;
+}

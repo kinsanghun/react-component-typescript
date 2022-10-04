@@ -1,0 +1,48 @@
+.basic-navigation {
+    position : relative;
+    width : 400px;
+    height: 50px;
+    display: block;
+}
+.basic-navigation li {
+    position : absolute;
+    width : 100%;
+    height : 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    border : 0.5px solid rgb(172, 172, 172);
+    transition : 0.5s;
+    color : rgb(96, 96, 96);
+    background: rgb(230, 230, 230);
+    cursor: pointer;
+}
+.basic-navigation li:first-child {
+    background: white;
+    z-index: 1;
+}
+.basic-navigation li:first-child span {
+    position : absolute;
+    right : 5%;
+    width : 0;
+    height : 0;
+    border-left : 6px solid transparent;
+    border-right : 6px solid transparent;
+    border-bottom : 12px solid rgb(121, 121, 121);
+    transition: 0.5s;
+}
+.basic-navigation.active li:first-child span {
+    transform : rotate(180deg);
+}
+.basic-navigation.active li:nth-child(1) {transform: translateY(calc(100% * 0));}
+.basic-navigation.active li:nth-child(2) {transform: translateY(calc(100% * 1));}
+.basic-navigation.active li:nth-child(3) {transform: translateY(calc(100% * 2));}
+.basic-navigation.active li:nth-child(4) {transform: translateY(calc(100% * 3));}
+.basic-navigation.active li:nth-child(5) {transform: translateY(calc(100% * 4));}
+.basic-navigation.active li:nth-child(6) {transform: translateY(calc(100% * 5));}
+.basic-navigation.active li:nth-child(7) {transform: translateY(calc(100% * 6));}
+.basic-navigation.active li:nth-child(8) {transform: translateY(calc(100% * 7));}
+.basic-navigation.active li:nth-child(9) {transform: translateY(calc(100% * 8));}
+.basic-navigation.active li:nth-child(10) {transform: translateY(calc(100% * 9));}
+

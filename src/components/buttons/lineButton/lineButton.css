@@ -1,0 +1,11 @@
+.line-button {
+    padding : 10px 35px;
+    margin : 0 auto;
+    display: inline-block;
+    border : 2px solid rgb(253, 158, 85);
+    border-radius: 10px;
+    transition : 0.4s;
+    background: transparent;
+    cursor: pointer;
+}
+.line-button:hover { background : rgba(244, 173, 42, 0.511); }

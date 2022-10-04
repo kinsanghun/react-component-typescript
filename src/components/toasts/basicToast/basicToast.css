@@ -1,0 +1,33 @@
+.basic-toast {
+    position: absolute;
+    width : 500px;
+    padding : 40px 30px 30px 30px;
+    bottom : 3rem;
+    right : 3rem;
+    border: 0.5px solid rgb(171, 171, 171);
+    background: white;
+}
+.basic-toast > .close {
+    position: absolute;
+    top : 2rem;
+    right : 5%;
+    align-items: right;
+    cursor: pointer;
+}
+.basic-toast > .close .line{
+    position: relative;
+    width : 15px;
+    display: block;
+    margin-bottom : 5px;
+    border : 0.5px solid rgb(150, 150, 150);
+}
+.basic-toast > .close .line:first-child {
+    transform : rotate(45deg);
+}
+.basic-toast > .close .line:last-child {
+    transform : translateY(-6px) rotate(-45deg);
+}
+.basic-toast > .content {
+    width : 100%;
+    height : 100%;
+}

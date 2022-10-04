@@ -1,0 +1,70 @@
+.horizontal-navigation { 
+    position: relative;
+    width : 50px;
+    height : 50px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background: orange;
+    z-index: 1;
+}
+.horizontal-navigation li{
+    position: absolute;
+    width : 0;
+    height : 50px;
+    display: flex;
+    align-items: center;
+    background: orange;
+    justify-content: center;
+    transition : 1s;
+    transform : translateX(0%);
+    color : white;
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 0;
+}
+.horizontal-navigation li:hover {
+    transition : 0s;
+    background: rgb(255, 205, 112);
+}
+.horizontal-navigation .btn {
+    width : 50px;
+    height : 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: orange;
+    border-right : 1px solid rgb(255, 221, 142);
+    z-index: 1;
+}
+.horizontal-navigation .btn > .line {
+    position: relative;
+    width : 50%;
+    border: 1px solid white;
+    background: white;
+    margin : 2px 0;
+    transition : 0.2s;
+}
+.horizontal-navigation .btn.active {
+    overflow: visible;
+}
+
+.horizontal-navigation .btn.active > .line:nth-child(1) { transform : translateY(6.5px) rotate(45deg)}
+.horizontal-navigation .btn.active > .line:nth-child(2) { opacity: 0;}
+.horizontal-navigation .btn.active > .line:nth-child(3) { transform : translateY(-6px) rotate(-45deg)}
+
+.horizontal-navigation .btn.active ~ li {
+    width : 150px;
+}
+.horizontal-navigation .btn.active ~ li:nth-child(2) {transform : translateX(calc((100% * 0) + 50px));}
+.horizontal-navigation .btn.active ~ li:nth-child(3) {transform : translateX(calc((100% * 1) + 50px));}
+.horizontal-navigation .btn.active ~ li:nth-child(4) {transform : translateX(calc((100% * 2) + 50px));}
+.horizontal-navigation .btn.active ~ li:nth-child(5) {transform : translateX(calc((100% * 3) + 50px));}
+.horizontal-navigation .btn.active ~ li:nth-child(6) {transform : translateX(calc((100% * 4) + 50px));}
+.horizontal-navigation .btn.active ~ li:nth-child(7) {transform : translateX(calc((100% * 5) + 50px));}
+.horizontal-navigation .btn.active ~ li:nth-child(8) {transform : translateX(calc((100% * 6) + 50px));}
+.horizontal-navigation .btn.active ~ li:nth-child(9) {transform : translateX(calc((100% * 7) + 50px));}
+.horizontal-navigation .btn.active ~ li:nth-child(10) {transform : translateX(calc((100% * 8) + 50px));}
+.horizontal-navigation .btn.active ~ li:nth-child(11) {transform : translateX(calc((100% * 9) + 50px));}
+.horizontal-navigation .btn.active ~ li:nth-child(12) {transform : translateX(calc((100% * 10) + 50px));}

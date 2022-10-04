@@ -1,0 +1,30 @@
+.circle-menu-toggle-btn {
+    position: relative;
+    width : 50px;
+    height : 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 197, 90);
+    border-radius: 50%;
+}
+.circle-menu-toggle-btn .line {
+    position: relative;
+    width : 50%;
+    display: block;
+    margin : 6% 0;
+    border-radius: 5px;
+    border : 1.5px solid white;
+    transition: 0.2s;
+    background: white;
+}
+.circle-menu-toggle-btn.active .line:nth-child(1){
+    transform: translateY(9px) rotate(45deg);
+}
+.circle-menu-toggle-btn.active .line:nth-child(2){
+    opacity: 0;
+}
+.circle-menu-toggle-btn.active .line:nth-child(3){
+    transform: translateY(-9px) rotate(-45deg);
+}

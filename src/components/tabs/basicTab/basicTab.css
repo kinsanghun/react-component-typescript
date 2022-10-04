@@ -1,0 +1,22 @@
+.basic-tab {
+    width : 100%;
+    display: flex;
+    padding : 0;
+    color : rgb(49, 49, 49);
+    border-bottom : 0.5px solid rgba(128, 128, 128, 0.615);
+}
+.basic-tab .b-li {
+    position: relative;
+    list-style: none;
+    padding : 20px 50px;
+    box-sizing: border-box;
+}
+.basic-tab .b-li.active::after {
+    position : absolute;
+    width : 100%;
+    height : 100%;
+    content :"";
+    bottom : -1px;
+    left : 0;
+    border-bottom : 3px solid orange;
+}

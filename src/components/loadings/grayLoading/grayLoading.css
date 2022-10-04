@@ -1,0 +1,10 @@
+.gray-loading {
+    position : relative;
+    width : 30px;
+    height : 30px;
+    border: 3px solid rgba(181, 181, 181, 0.335);
+    border-radius: 50%;
+    border-top-color : rgb(138, 138, 138);
+    animation : gray-loading 0.7s linear infinite;
+}
+@keyframes gray-loading { 100%{transform : rotate(360deg)} }
