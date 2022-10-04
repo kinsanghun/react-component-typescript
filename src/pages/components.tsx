@@ -20,7 +20,7 @@ function Components() {
     const [buttonToggle, setButtonToggle] = useState(false);
     const toggleFunc = () => setButtonToggle(!buttonToggle)
     const [menuState, setMenuState] = useState(0);
-    const defaultURL:string = "https://github.com/kinsanghun/react-components-typescript/blob/master/react-component-typescript/src/components/";
+    const defaultURL:string = "https://github.com/kinsanghun/react-component-typescript/tree/master/src/components/";
     const mainMenu = [
         {id:0, title:"Tab"},
         {id:1, title:"Navigation"},
