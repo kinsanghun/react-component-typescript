@@ -94,14 +94,10 @@ function Components() {
         </div>
         <div className={buttonToggle ? "menu active" : "menu"}>
             <div className="main">
-                <ul>
-                    {mainMenuList}
-                </ul>
+                <ul>{mainMenuList}</ul>
             </div>
             <div className="sub">
-                <ul>
-                    {subMenuList}
-                </ul>
+                <ul>{subMenuList}</ul>
             </div>
         </div>
         <div className="container">

@@ -10,6 +10,7 @@ import Components from 'pages/components';
 import Interactive from 'pages/Interactive';
 import Contact from 'pages/Contact';
 import ScrollToTop from 'util/scrollTop';
+import WebSite from 'pages/website';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/" element={<Main />}></Route>
           <Route path="/components" element={<Components />}></Route>
           <Route path="/interactive" element={<Interactive />}></Route>
+          <Route path="/website" element={<WebSite />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
         </Routes>
         <Footer />

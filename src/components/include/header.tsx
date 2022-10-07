@@ -19,6 +19,7 @@ function Header() {
                 <Link to="/" onClick={()=>{setMobileMenu(!mobileMenu)}}><li>Home</li></Link>
                 <Link to="/components" onClick={()=>{setMobileMenu(!mobileMenu)}}><li>Components</li></Link>
                 <Link to="/interactive" onClick={()=>{setMobileMenu(!mobileMenu)}}><li>Interactive</li></Link>
+                <Link to="/website" onClick={()=>{setMobileMenu(!mobileMenu)}}><li>Web Site Example</li></Link>
                 <Link to="/contact" onClick={()=>{setMobileMenu(!mobileMenu)}}><li>Contact</li></Link>
             </ul>
         </header>
