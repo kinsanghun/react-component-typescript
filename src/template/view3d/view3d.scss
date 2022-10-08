@@ -1,0 +1,154 @@
+.view-3d {
+    position : relative;
+
+    * { box-sizing: border-box; }
+
+    .header {
+        position : absolute;
+        width : 100%;
+        height : 80px;
+        padding : 0 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: white;
+        color : black;
+        box-shadow : 0 0 5px rgba(0, 0, 0, 0.5);
+        z-index: 1;
+
+        ul {
+            display: flex;
+            li {
+                list-style: none;
+                margin-left : 3rem;
+            }
+        }
+    }
+
+    .view {
+        position: relative;
+        width : 100%;
+        height : 600px;
+        margin : 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background : rgb(253, 194, 106);
+        canvas {
+            position : relative;
+        }
+        .text {
+            padding-top : 100px;
+            color : rgb(75, 75, 75);
+            height : 500px;
+            position : relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        
+            p {
+                max-width: 600px;
+            }
+
+            button {
+                margin-top : 1rem;
+                width : 100px;
+                height : 40px;
+                color : rgb(75, 75, 75);
+                border : 1px solid rgb(75, 75, 75);
+                background: transparent;
+                cursor: pointer;
+                transition: 0.2s;
+            }
+            button:hover {
+                background: rgb(0, 0, 0);
+                border : 1px solid rgb(0, 0, 0);
+                color : rgb(255, 255, 255);
+            }
+        }
+    }
+    .content {
+        width : 100%;
+        min-height : 100vh;
+        color : white;
+        *{
+            box-sizing: border-box;
+        }
+        .video {
+            width : 100%;
+            height : 100vh;
+            padding : 5rem 400px 10rem 400px;
+            text-align: center;
+            background: rgb(23, 20, 20);
+            h2 {
+                text-transform: uppercase;
+            }
+            video {
+                position: relative;
+                margin : 3rem auto;
+                width : 100%;
+                height : 500px;
+                object-fit: fill;
+            }
+        }
+        .cards {
+            width : 850px;
+            min-height : 100vh;
+            display: flex;
+            justify-content: space-between;
+            margin : 100px auto;
+            
+            h2 {
+                color : black;
+                text-transform: uppercase;
+            }
+            p {
+                width : 400px;
+                color : rgb(96, 96, 96);
+                margin-bottom : 50px;
+            }
+            .line {
+                .card {
+                    width : 400px;
+                    height : 600px;
+                    margin-bottom : 50px;
+                    transition: 0.2s;
+                    img {
+                        width : 100%;
+                        height : 100%;
+                        border-radius: 15px;
+                        box-shadow : 2px 2px 2px rgba(0, 0, 0, 0.1);
+                    }
+                }
+                .card:hover {
+                    transform : scale(1.05);
+                }
+            }
+            .line:nth-child(1) {
+            }
+        }
+        .flex-card {
+            width : 1200px;
+            margin : 100px auto;
+            color : black;
+            text-align: center;
+            text-transform: uppercase;
+            h2 {
+                margin : 30px;
+            }
+            div {
+                display: flex;
+                background: black;
+                img {
+                    width : 50%;
+                    margin : 0;
+                    transition: 0.3s;
+                }
+                img:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}

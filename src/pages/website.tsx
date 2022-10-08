@@ -3,8 +3,9 @@ import 'static/website.scss';
 import Ocean from "template/ocean/ocean";
 import FullScreen from "template/fullScreenSite/fullScreen";
 import Shopping from "template/shopping/shopping";
+import View3d from "template/view3d/view3d";
 function WebSite() {
-    const [view, setView] = useState<JSX.Element>(<Ocean/>);
+    const [view, setView] = useState<JSX.Element>(<View3d/>);
     const menuList = [
         {
             title : "Shopping",
@@ -17,6 +18,10 @@ function WebSite() {
         {
             title : "Ocean",
             jsx : <Ocean/>
+        },
+        {
+            title : "View 3D",
+            jsx : <View3d/>
         },
     ]
     const menus:JSX.Element[] = [];
